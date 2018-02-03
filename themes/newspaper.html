@@ -1,0 +1,340 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>枠をつけてみよう</title>
+<meta http-equiv="content-type" content="text/html; charset=shift_jis">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="author" content="suitoyaji">
+<meta name="generator" content="textediter">
+<link rel="index" href="index.html">
+<link rev="made" href="(mail-address)">
+<link rel="stylesheet" href="../design01.css" type="text/css">
+<style type="text/css"><!--
+ul          {
+	list-style:none;}
+
+.sample_01  {
+	width:100px;
+	height:100px;
+	background:#ffcccc;
+	float:right;}
+
+.sample_02  {
+	width:100px;
+	height:100px;
+	background:#ffcccc;
+	border:#ff0000 solid 1px;
+	float:right;}
+
+.sample_03  {
+	width:100px;
+	height:100px;
+	border:#ff0000 solid 1px;
+	float:right;}
+
+.sample_04  {
+	width:100px;
+	height:100px;
+	border-top:#ff0000 solid 1px;
+	border-right:#0000ff dotted 3px;
+	border-bottom:#008800 double 5px;
+	border-left:#800080 dashed 7px;
+	float:right;}
+
+.sample_05  {
+	width:100px;
+	height:100px;
+	border-color:#ff0000 #0000ff #008800 #800080;
+	border-style:solid dotted double dashed;
+	border-width:1px 3px 5px 7px;
+	float:right;}
+--></style>
+</head>
+<body>
+
+<div style="text-align:center;"><!-- IE centering -->
+<div id="other_center"><!-- others centering      -->
+
+	<br>
+	<br>
+
+	<div class="ex4">枠をつけてみよう</div>
+	<div class="ex6">枠をつけてみよう</div>
+
+	<br>
+
+	<a name="top" style="color:#eceeec;">.</a><br>
+
+	<!--
+	<ul>
+	<li><a href="#moji_border" id="p_link01">文字の枠</a></li>
+	<li><a href="#moji_box" id="p_link01">ボックス領域の枠</a></li>
+	<li><a href="#border_type" id="p_link01">枠線の種類</a></li>
+	</ul>
+	-->
+
+	<div style="height:1em;"></div>
+
+	<a name="moji_border" id="p_link02">文字の枠</a>
+
+	<div style="height:1em;"></div>
+
+	<div id="bo_1">
+		<div style="padding:10px;">
+			border:<font style="color:red;">枠の色</font>
+			<font style="color:green;">枠の種類</font>
+			<font style="color:blue;">枠の太さ</font>;
+			<br>
+
+			<pre>
+&lt;font style="border:<font style="color:red;">#ff0000</font> <font style="color:green;">solid</font> <font style="color:blue;">1px</font>;"&gt;
+	文字の枠
+&lt;/font&gt;
+			</pre>
+
+			<font style="border:#ff0000 solid 1px;">
+				文字の枠</font>
+		</div>
+	</div>
+
+	<div style="height:1em;"></div>
+
+	<a name="moji_box" id="p_link02">ボックス領域の枠</a>
+
+	<div style="height:1em;"></div>
+
+	<div id="bo_1">
+		<div style="padding:10px;">
+
+			border:<font style="color:red;">枠の色</font>
+			<font style="color:green;">枠の種類</font>
+			<font style="color:blue;">枠の太さ</font>;
+			<br>
+
+			<div class="sample_01">
+				横100px<br>
+				縦100px
+			</div>
+
+			<pre>
+&lt;div style="width:100px;height:100px;background:#ffcccc;"&gt;
+	横100px&lt;br&gt;
+	縦100px
+&lt;/div&gt;
+			</pre>
+			<br style="clear:both;">
+
+			<div class="sample_02">
+				横100px<br>
+				縦100px
+			</div>
+
+			<pre>
+&lt;div style="width:100px;height:100px;background:#ffcccc;
+border:<font style="color:red;">#ff0000</font> <font style="color:green;">solid</font> <font style="color:blue;">1px</font>;"&gt;
+	横100px&lt;br&gt;
+	縦100px
+&lt;/div&gt;
+			</pre>
+			<br style="clear:both;">
+
+			<div class="sample_03">
+				横100px<br>
+				縦100px
+			</div>
+
+			<pre>
+&lt;div style="width:100px;height:100px;
+border:<font style="color:red;">#ff0000</font> <font style="color:green;">solid</font> <font style="color:blue;">1px</font>;"&gt;
+	横100px&lt;br&gt;
+	縦100px
+&lt;/div&gt;
+			</pre>
+			<br style="clear:both;">
+
+		</div>
+	</div>
+
+	<div style="height:1em;"></div>
+
+	<a name="border_type" id="p_link02">枠線の種類</a>
+
+	<div style="height:1em;"></div>
+
+	<div id="bo_1">
+		<div style="padding:10px;">
+
+			<div style="width:300px;">
+
+				<div style="border:#d0d0d0 solid 5px;">
+					border:#d0d0d0 <font style="color:green;">
+					solid</font> 5px;
+				</div>
+
+				<div style="height:1em;"></div>
+
+				<div style="border:#d0d0d0 double 5px;">
+					border:#d0d0d0 <font style="color:green;">
+					double</font> 5px;
+				</div>
+
+				<div style="height:1em;"></div>
+
+				<div style="border:#d0d0d0 groove 5px;">
+					border:#d0d0d0 <font style="color:green;">
+					groove</font> 5px;
+				</div>
+
+				<div style="height:1em;"></div>
+
+				<div style="border:#d0d0d0 ridge 5px;">
+					border:#d0d0d0 <font style="color:green;">
+					ridge</font> 5px;
+				</div>
+
+				<div style="height:1em;"></div>
+
+				<div style="border:#d0d0d0 inset 5px;">
+					border:#d0d0d0 <font style="color:green;">
+					inset</font> 5px;
+				</div>
+
+				<div style="height:1em;"></div>
+
+				<div style="border:#d0d0d0 outset 5px;">
+					border:#d0d0d0 <font style="color:green;">
+					outset</font> 5px;
+				</div>
+
+				<div style="height:1em;"></div>
+
+				<div style="border:#d0d0d0 dotted 5px;">
+					border:#d0d0d0 <font style="color:green;">
+					dotted</font> 5px;
+				</div>
+
+				<div style="height:1em;"></div>
+
+				<div style="border:#d0d0d0 dashed 5px;">
+					border:#d0d0d0 <font style="color:green;">
+					dashed</font> 5px;
+				</div>
+
+				<div style="height:1em;"></div>
+
+				<div style="border:none;">
+					border:none;
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<div style="height:1em;"></div>
+
+
+	<div style="height:1em;"></div>
+
+	<a name="border_type" id="p_link02">枠線の色</a>
+
+	<div style="height:1em;"></div>
+
+	<div id="bo_1">
+		<div style="padding:10px;background:ivory;">
+			<span style="color:green;border:transparent solid 1px;">
+				この文字と同じ色で枠線の色がみえるかな
+			</span>
+
+			<div style="height:1em;"></div>
+
+			<ul>
+				<li>style="border:transparent solid 1px;"</li>
+
+				<li>枠線の色部分に transparent（透明）をした場合</li>
+
+				<div style="height:1em;"></div>
+
+				<li style="color:red;">win IE だけは その時の文字色で枠線の色を</li>
+				<li style="color:red;">他のブラウザでは透明な枠線になる</li>
+			</ul>
+
+		</div>
+	</div>
+
+	<div style="height:1em;"></div>
+
+	<a name="border_position" id="p_link02">枠線を個別に指定する</a>
+
+	<div style="height:1em;"></div>
+
+	<div id="bo_1">
+		<div style="padding:10px;">
+			<div class="sample_04">
+				横100px<br>
+				縦100px
+			</div>
+
+		<pre>
+&lt;div style="width:100px;height:100px;
+	<font style="color:red;">border-top:#ff0000 solid 1px;</font>
+	<font style="color:blue;">border-right:#0000ff dotted 3px;</font>
+	<font style="color:green;">border-bottom:#008800 double 5px;</font>
+	<font style="color:purple;">border-left:#800080 dashed 7px;</font>"&gt;
+		横100px&lt;br&gt;
+		縦100px
+&lt;/div&gt;
+		</pre>
+		<br style="clear:both;">
+
+		</div>
+	</div>
+
+	<div style="height:1em;"></div>
+
+	<div id="bo_1">
+		<div style="padding:10px;">
+			border-***:
+			<font style="color:#ff0000;">top</font>
+			<font style="color:#0000ff;">right</font>
+			<font style="color:#008800;">bottom</font>
+			<font style="color:#800080;">left</font>;
+
+			<div class="sample_05">
+				横100px<br>
+				縦100px
+			</div>
+
+			<pre>
+&lt;div style="width:100px;height:100px;
+	border-color:<font style="color:#ff0000;">#ff0000</font> <font style="color:#0000ff;">#0000ff</font> <font style="color:#008800;">#008800</font> <font style="color:#800080;">#800080</font>;
+	border-style:<font style="color:#ff0000;">solid</font> <font style="color:#0000ff;">dotted</font> <font style="color:#008800;">double</font> <font style="color:#800080;">dashed</font>;
+	border-width:<font style="color:#ff0000;">1px</font> <font style="color:#0000ff;">3px</font> <font style="color:#008800;">5px</font> <font style="color:#800080;">7px</font>;"&gt;
+		横100px&lt;br&gt;
+		縦100px
+&lt;/div&gt;
+			</pre>
+
+			<br style="clear:both;">
+		</div>
+	</div>
+
+
+	<div style="height:5em;"></div>
+
+	<div id="link_button">
+		<a href="#top">top</a>
+		<a href="../index.html" target="_top">home(geo)</a>
+		<a href="http://members.goo.ne.jp/home/suitoyaji" target="_top">home(goo)</a>
+		<a href="javascript:window.close();">close</a>
+		<div style="height:3em;"></div>
+		<img src="http://counter.geocities.jp/ncounter.cgi?id=suit_oyaji" alt="Counter" style="border:none;width:1px;height:1px;">
+	</div>
+
+
+</div><!-- others centering -->
+</div><!-- IE centering -->
+</body>
+
+</html>

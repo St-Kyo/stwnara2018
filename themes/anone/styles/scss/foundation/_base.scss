@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+// Reset the box-sizing
+* {
+    box-sizing: border-box;
+}
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+html, body {
+    height: 100%;
+}
+html {
+    font-size: $fontSize;
+    -webkit-font-smoothing: antialiased; //transitionによる文字のにじみ回避
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body {
+    background-color: $bodyColor;
+    color: $textColor;
+    font-family: $fontFamily;
+    line-height: $lineHeight;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+    word-wrap: break-word;
+}
+
+
+// Text
+strong, em {
+    font-weight: 700;
+}
+
+
+// Links
+a {
+    color: $linkColor;
+    outline: none;
+    text-decoration: none;
+    transition: background-color 100ms, border-color 100ms, color 100ms, opacity 100ms;
+}
+
+
+// Images
+img, svg, video {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+
+// Table
+table {
+    max-width: 100%;
+    width: 100%;
+    th, td {
+        word-break: break-all;
+    }
+}

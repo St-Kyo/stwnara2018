@@ -1,0 +1,96 @@
+@charset "utf-8";
+@import "foundation/variables";
+@import "foundation/mixin";
+@import "foundation/reset";
+@import "foundation/base";
+
+.paper {
+    background: #fff;
+    margin: 0 auto;
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: $width;
+
+    .row {
+        display: flex;
+        flex-direction: row-reverse;
+        & + .row {
+            border-top: 3px solid #333;
+        }
+    }
+
+    .hero {
+        height: 600px;
+        .header {
+            background: #333;
+            border-top-width: 0;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+            padding: 40px 10px 20px;
+            position: relative;
+            width: 140px;
+            .title {
+                @include fz(50, 120, 700);
+                @include letterSpacing(100);
+                flex-grow: 1;
+                writing-mode: vertical-rl;
+            }
+            .date {
+                @include fz(14, 20, 700);
+                text-align: center;
+            }
+        }
+        .image {
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+        }
+        .text {
+            flex-grow: 1;
+            padding: 40px 30px 40px 40px;
+            writing-mode: vertical-rl;
+        }
+    }
+
+    .topic {
+        height: 350px;
+        padding: 40px;
+        .title {
+            @include fz(32, 35, 700);
+            margin-left: 30px;
+            writing-mode: vertical-rl;
+        }
+        .ranking {
+            display: flex;
+            flex-direction: row-reverse;
+            flex-grow: 1;
+            .item {
+                background: #eee;
+                display: flex;
+                flex-direction: row-reverse;
+                flex-grow: 1;
+                & + .item {
+                    margin-right: 25px;
+                }
+            }
+            .rank {
+                @include fz(18, 18, 700);
+                background: #666;
+                color: #fff;
+                padding: 20px 6px;
+                writing-mode: vertical-rl;
+                span {
+                    text-combine-upright: all;
+                }
+            }
+            .text {
+                padding: 20px;
+                writing-mode: vertical-rl;
+            }
+        }
+    }
+}
